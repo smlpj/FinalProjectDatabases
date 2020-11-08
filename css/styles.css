@@ -177,13 +177,13 @@ sup {
 }
 
 a {
-    color: #f4623a;
+    color: #fff;
     text-decoration: none;
     background-color: transparent;
 }
 
 a:hover {
-    color: #d6370c;
+    color: gray;
     text-decoration: underline;
 }
 
@@ -508,7 +508,7 @@ mark,
 }
 
 .blockquote-footer::before {
-    content: "— ";
+    content: "— ";
 }
 
 .img-fluid {
@@ -1643,6 +1643,7 @@ pre code {
 .table thead th {
     vertical-align: bottom;
     border-bottom: 2px solid #dee2e6;
+    background-color: honeydew;
 }
 
 .table tbody+tbody {
@@ -4317,7 +4318,7 @@ input[type=button].btn-block {
 }
 
 .nav-pills .nav-link.active,
-.nav-pills .show>. {
+.nav-pills .show>.active {
     color: #fff;
     background-color: #f4623a;
 }
@@ -4761,7 +4762,7 @@ input[type=button].btn-block {
     flex-direction: column;
     min-width: 0;
     word-wrap: break-word;
-    background-color: #fff;
+    background-color: #343a40;
     background-clip: border-box;
     border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: 0.25rem;
@@ -10206,13 +10207,13 @@ hr.light {
         color: #e0e3e7;
     }
     #mainNav.navbar-scrolled .navbar-brand:hover {
-        color: #abdae6;
+        color: #677979;
     }
     #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link {
-        color: #212529;
+        color: gray;
     }
     #mainNav.navbar-scrolled .navbar-nav .nav-item .nav-link:hover {
-        color: #94dbdb;
+        color: #677979;
     }
 }
 
@@ -10247,6 +10248,76 @@ header.masthead h1 {
 
 @media (min-width: 1200px) {
     header.masthead h1 {
+        font-size: 3.5rem;
+    }
+}
+
+header.otra {
+    padding-top: 10rem;
+    padding-bottom: calc(10rem - 4.5rem);
+    background: linear-gradient(to bottom, rgba(7, 6, 6, 0.8) 0%, rgba(7, 6, 6, 0.8) 100%), url("../assets/img/tables.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+header.otra h1 {
+    font-size: 2.25rem;
+}
+
+@media (min-width: 992px) {
+    header.otra {
+        height: 100vh;
+        min-height: 40rem;
+        padding-top: 4.5rem;
+        padding-bottom: 0;
+    }
+    header.otra p {
+        font-size: 1.15rem;
+    }
+    header.otra h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    header.otra h1 {
+        font-size: 3.5rem;
+    }
+}
+
+header.otra2 {
+    padding-top: 10rem;
+    padding-bottom: calc(10rem - 4.5rem);
+    background: linear-gradient(to bottom, rgba(7, 6, 6, 0.8) 0%, rgba(7, 6, 6, 0.8) 100%), url("../assets/img/charts.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+header.otra2 h1 {
+    font-size: 2.25rem;
+}
+
+@media (min-width: 992px) {
+    header.otra2 {
+        height: 100vh;
+        min-height: 40rem;
+        padding-top: 4.5rem;
+        padding-bottom: 0;
+    }
+    header.otra2 p {
+        font-size: 1.15rem;
+    }
+    header.otra2 h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    header.otra2 h1 {
         font-size: 3.5rem;
     }
 }
